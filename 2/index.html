@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking</title>
+</head>
+<body>
+
+<h2>Hotel Booking Form</h2>
+
+<form id="bookingForm">
+
+    Full Name:
+    <input type="text" id="name">
+    <span id="nameError"></span>  <!-- div vs span? -->
+    <br><br>
+
+    Email:
+    <input type="text" id="email">
+    <span id="emailError"></span>
+    <br><br>
+
+    Mobile:
+    <input type="text" id="mobile">
+    <span id="mobileError"></span>
+    <br><br>
+
+    Check-in Date:
+    <input type="date" id="checkin">
+    <span id="checkinError"></span>
+    <br><br>
+
+    Check-out Date:
+    <input type="date" id="checkout">
+    <span id="checkoutError"></span>
+    <br><br>
+
+    Number of Guests:
+    <input type="number" id="guests">
+    <span id="guestsError"></span>
+    <br><br>
+
+    Room Type:
+    <select id="room">
+        <option value="Select">Select</option>
+        <option value="Single">Single</option>
+        <option value="Double">Double</option>
+        <option value="Suite">Suite</option>
+    </select>
+    <span id="roomError"></span>
+    <br><br>
+
+    <button type="submit">Book Now</button>
+
+</form>
+
+<h3 id="successMessage"></h3>
+
+<script src="script.js"></script>
+
+</body>
+</html>
